@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Grieveson Plastering — Concept</title>
+<title>Grieveson Plastering — Concept Demo</title>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -129,6 +129,36 @@ h1,h2,.box h3,.step h3{font-family:Bitter,Georgia,"Times New Roman",serif}
 .notebox .nl{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#8a6a1c;font-weight:800;margin-bottom:8px}
 .notebox p{font-size:14.5px;color:#4a4231;margin:0 0 9px}.notebox p:last-child{margin:0}
 .notebox b{color:#241c0c}
+.cert{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px 32px;max-width:920px;margin:0 auto}
+.cert .badge{display:inline-block;background:var(--acc);color:#fff;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;padding:6px 12px;border-radius:999px;margin-bottom:14px}
+.cert h3{font-family:Bitter,Georgia,serif;font-size:23px;margin:0 0 12px}
+.cert p{font-size:15px;color:var(--mut);margin:0 0 11px}
+.cert .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+@media(max-width:700px){.cert .cgrid{grid-template-columns:1fr}}
+.cert .ci{background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:14px 16px;font-size:14px;color:var(--ink)}
+.cert .ci b{display:block;margin-bottom:3px}
+.dash{max-width:900px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.dash .dh{background:var(--deep);color:#fff;padding:13px 20px;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.dash .db{padding:22px}
+.drow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+@media(max-width:760px){.drow{grid-template-columns:1fr 1fr}}
+.dcell{background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:15px;text-align:center}
+.dcell .dv{font-family:Bitter,Georgia,serif;font-size:26px;font-weight:800;color:var(--deep2)}
+.dcell .dl{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:800;margin-top:5px}
+.dbars{display:flex;flex-direction:column;gap:9px}
+.dbar{display:grid;grid-template-columns:150px 1fr 44px;align-items:center;gap:11px;font-size:13.5px}
+@media(max-width:600px){.dbar{grid-template-columns:110px 1fr 38px;font-size:12.5px}}
+.dbar .dt{color:var(--ink);font-weight:700}
+.dbar .dm{height:11px;border-radius:6px;background:var(--line);overflow:hidden}
+.dbar .dm i{display:block;height:100%;border-radius:6px;background:var(--acc)}
+.dbar .dn{text-align:right;color:var(--mut);font-weight:800}
+.faq{max-width:880px;margin:0 auto}
+.faq details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:17px 20px;font-weight:800;font-size:15.5px;list-style:none;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--acc);font-size:20px;line-height:1}
+.faq details[open] summary::after{content:"3"}
+.faq .fa{padding:0 20px 18px;font-size:14.5px;color:var(--mut)}
 .stick{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;background:var(--acc);text-align:center;padding:13px;font-weight:800;color:#fff;text-decoration:none}
 @media(max-width:760px){.stick{display:block}footer{padding-bottom:78px}}
 </style>
@@ -138,7 +168,7 @@ h1,h2,.box h3,.step h3{font-family:Bitter,Georgia,"Times New Roman",serif}
 
 <nav><div class="wrap navin">
   <div class="logo">Grieveson <span>Plastering</span></div>
-  <div class="navl"><a href="#trade">Builders &amp; Landlords</a><a href="#work">Services</a><a href="#how">How It Works</a><a href="#areas">Areas</a></div>
+  <div class="navl"><a href="#trade">Builders &amp; Landlords</a><a href="#work">Services</a><a href="#cert">Certified</a><a href="#faq">Questions</a><a href="#areas">Areas</a></div>
   <a class="call" href="tel:07860284106">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg>
     07860 284106</a>
@@ -201,6 +231,33 @@ h1,h2,.box h3,.step h3{font-family:Bitter,Georgia,"Times New Roman",serif}
   <div><b>Domestic</b> &amp; commercial</div><div><b>Free</b> quotes</div>
 </div></div>
 
+
+<section id="cert"><div class="wrap">
+  <div class="sh mid"><div class="kick">Your Credential</div>
+    <h2>Most people do not know what that badge means.</h2>
+    <p>On your current site it appears once, in the middle of a paragraph. Here is what it could look
+    like when it is doing some work.</p></div>
+  <div class="cert">
+    <div class="badge">British Gypsum Certified</div>
+    <h3>A manufacturer put its name to our work.</h3>
+    <p><b>Anyone can call themselves a plasterer.</b> A manufacturer certification is different, because
+    it is somebody else vouching for the work rather than us describing ourselves as reliable.</p>
+    <p><b>For a homeowner it means the finish should hold up.</b> For a builder or a commercial client
+    choosing between three quotes, it is often the thing that makes the decision easy &mdash; because it
+    is checkable and the other two quotes usually have nothing like it.</p>
+    <div class="cgrid">
+      <div class="ci"><b>Third-party, not self-declared</b>It is a manufacturer&rsquo;s scheme, not a
+      claim we wrote about ourselves.</div>
+      <div class="ci"><b>Rare among local competitors</b>Very few plasterers quoting against us in
+      Hertfordshire will carry one.</div>
+      <div class="ci"><b>It answers the price question</b>When you are not the cheapest quote, this is
+      the reason why.</div>
+      <div class="ci"><b>It belongs at the top</b>Not buried in the fourth paragraph of an about
+      section.</div>
+    </div>
+  </div>
+</div></section>
+
 <section><div class="wrap">
   <div class="notebox">
     <div class="nl">The one idea this page demonstrates</div>
@@ -260,10 +317,41 @@ h1,h2,.box h3,.step h3{font-family:Bitter,Georgia,"Times New Roman",serif}
   </div>
 </div></section></div>
 
+
+<div class="band"><section id="measure"><div class="wrap">
+  <div class="sh mid"><div class="kick">What You Would Actually See</div>
+    <h2>Every enquiry, sorted, in one place.</h2>
+    <p>This is the part that does not exist today. <b>Nothing on your site currently records anything</b>
+    &mdash; so there is no way to know which enquiries were worth having.</p></div>
+  <div class="dash">
+    <div class="dh">Enquiries &mdash; illustrative example month</div>
+    <div class="db">
+      <div class="drow">
+        <div class="dcell"><div class="dv">&mdash;</div><div class="dl">Enquiries</div></div>
+        <div class="dcell"><div class="dv">&mdash;</div><div class="dl">Bigger jobs</div></div>
+        <div class="dcell"><div class="dv">&mdash;</div><div class="dl">Builders &amp; landlords</div></div>
+        <div class="dcell"><div class="dv">&mdash;</div><div class="dl">Quoted</div></div>
+      </div>
+      <div class="dbars">
+        <div class="dbar"><div class="dt">Renovations</div><div class="dm"><i style="width:0%"></i></div><div class="dn">&mdash;</div></div>
+        <div class="dbar"><div class="dt">Commercial</div><div class="dm"><i style="width:0%"></i></div><div class="dn">&mdash;</div></div>
+        <div class="dbar"><div class="dt">Rendering</div><div class="dm"><i style="width:0%"></i></div><div class="dn">&mdash;</div></div>
+        <div class="dbar"><div class="dt">Several rooms</div><div class="dm"><i style="width:0%"></i></div><div class="dn">&mdash;</div></div>
+        <div class="dbar"><div class="dt">Small repairs</div><div class="dm"><i style="width:0%"></i></div><div class="dn">&mdash;</div></div>
+      </div>
+    </div>
+  </div>
+  <p class="oppnote" style="text-align:center;max-width:820px;margin:22px auto 0">
+  <b>Every figure above is deliberately blank, because we have nothing to fill them in with.</b>
+  Measurement only records from the day it is switched on &mdash; which is why it is worth doing before
+  anything else, and why every month without it is a month of history you cannot get back.</p>
+</div></section></div>
+
 <section><div class="wrap">
   <div class="sh mid"><div class="kick">Reviews</div><h2>Where your rating would sit.</h2>
-    <p>Placeholders. Twelve jobs a month is a lot of finished rooms, and there is no rating anywhere on
-    your site.</p></div>
+    <p>Placeholders. <b>Twelve jobs a month is twelve people a month who could be asked</b>, and there
+    is no rating anywhere on your site. It costs nothing, and in a trade where three quotes look
+    identical on paper it is often what decides which one gets rung back.</p></div>
   <div class="ratebar"><div class="ratebig">&mdash;</div>
     <div class="ratetxt"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
     <b>placeholder</b> &mdash; your Google rating and review count would sit here</div></div>
@@ -271,6 +359,32 @@ h1,h2,.box h3,.step h3{font-family:Bitter,Georgia,"Times New Roman",serif}
     <div class="rev"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Placeholder. A real review would carry a name, a date and the town.&rdquo;</p><div class="who">Placeholder <span>Example only &mdash; not a real review</span></div></div>
     <div class="rev"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Placeholder. A review from a builder is worth ten from homeowners.&rdquo;</p><div class="who">Placeholder <span>Example only &mdash; not a real review</span></div></div>
     <div class="rev"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Placeholder. Twelve a month is a manageable number of people to ask.&rdquo;</p><div class="who">Placeholder <span>Example only &mdash; not a real review</span></div></div>
+  </div>
+</div></section>
+
+
+<section id="faq"><div class="wrap">
+  <div class="sh mid"><div class="kick">Common Questions</div><h2>The things people ask us.</h2>
+    <p><b>Illustrative examples.</b> On a live site the answers would be yours, in your words &mdash;
+    and they are the questions people type into Google before they ring anybody.</p></div>
+  <div class="faq">
+    <details><summary>How long before I can decorate?</summary><div class="fa">The honest answer
+    depends on the room, the season and how thick the coat is, so it is not a number we would guess at
+    on a web page. <b>This is where your own answer would go</b> &mdash; and it is the single most
+    common question in your trade.</div></details>
+    <details><summary>Do I need a re-skim, or will a repair do?</summary><div class="fa">Often a repair
+    will do, and it is the smaller job. <b>Saying so in writing is worth more than it costs you</b>,
+    because it is the thing that makes somebody trust the quote they get.</div></details>
+    <details><summary>Do you move furniture and cover the floors?</summary><div class="fa">Your answer
+    here. <b>Mess is what people are actually worried about</b> when they put off having plastering
+    done, and almost no plasterer&rsquo;s website addresses it.</div></details>
+    <details><summary>Can you work around us living in the house?</summary><div class="fa">Your answer
+    here. For homeowners this decides whether they book now or wait until next year.</div></details>
+    <details><summary>Do you price from drawings for builders?</summary><div class="fa">Your answer
+    here. <b>Builders ask this first</b>, and it is the question that opens the repeat work.</div></details>
+    <details><summary>What areas do you cover?</summary><div class="fa">Stevenage and Hertfordshire, per
+    your current site. On a live version each town would have its own page, because people search the
+    town as well as the trade.</div></details>
   </div>
 </div></section>
 
@@ -299,8 +413,17 @@ h1,h2,.box h3,.step h3{font-family:Bitter,Georgia,"Times New Roman",serif}
     &mdash; including references to programme working, payment terms, before-and-after photographs and
     direct billing &mdash; are illustrations of how such a page could read and are NOT statements of
     services or terms you offer</b>; they would need your confirmation before anything went live.
-    Service areas beyond Stevenage are illustrative. <b>No price, timescale, warranty or guarantee is
-    offered anywhere.</b> The quote form is a front-end demonstration: it sends nothing, stores nothing
+    Service areas beyond Stevenage are illustrative. <b>The section describing what British Gypsum
+    Certified means is our own general commentary on why a manufacturer certification carries weight
+    with customers; we have NOT verified your certification, and we make no statement about what the
+    scheme requires, awards or covers &mdash; that is a matter for British Gypsum, and the claim that
+    few local competitors hold one is our impression rather than a researched finding.</b> <b>The
+    enquiry dashboard is an empty illustration of a reporting view: every figure and every bar is
+    deliberately blank, no number in it is real, and it does not depict data from your business or from
+    anyone else&rsquo;s.</b> <b>The six questions in the common-questions section are examples of what
+    such a page could contain, and the answers are deliberately left unanswered &mdash; nothing there
+    states a drying time, a working practice or a service you offer.</b> <b>No price, timescale,
+    warranty or guarantee is offered anywhere.</b> The quote form is a front-end demonstration: it sends nothing, stores nothing
     and contacts nobody.
   </div>
 </div></footer>
